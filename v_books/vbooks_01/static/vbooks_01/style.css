@@ -1,13 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+
 .navbar {
-    background-color: #131313;
+    background-color: black;
     color: white;
-    padding: 1rem;
+    padding: 0.1rem;
     text-align: center;
 }
+
 .navbar ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    gap: 35px;
+    font-size: 2rem;
 }
 .navbar ul li a {
     color: white;
@@ -17,9 +27,50 @@
 .navbar ul li a:hover {
     color: #ffcc00;
 }
+
 .content {
-    padding: 20px;
+    padding: 0px;
 }
+
+.content ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+/* SECCION PRINCIPAL NEGOCIOS */
+#seccionLibrosNeg{
+    background-color: black;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    text-transform: bold;
+}
+
+#seccionLibrosBest{
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    text-transform: bold;
+}
+
+/* BOTONES*/
+.purchase-buttons a {
+    display: inline-block;
+      margin: 0.5rem;
+      padding: 0.3rem 1rem;
+      font-size:1rem;
+      border-radius: 10px;
+      text-decoration: none;
+}
+
+.masInfo{
+  background-color: #007aff;
+  color: white;
+}
+
+
+/* DESTACADOS */
 .ebook-list {
     display: flex;
     flex-wrap: wrap;

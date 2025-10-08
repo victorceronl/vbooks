@@ -4,19 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Ebook Platform{% endblock %}</title>
+    <title>{% block title %}vBooks @victorceronl{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'vbooks_01/style.css' %}">
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="{% url 'home' %}">Inicio</a></li>
-            <li><a href="{% url 'category' 'Negocios' %}">Negocios</a></li>
-            <li><a href="{% url 'category' 'BestSellers' %}">BestSellers</a></li>
+            <li><a href="{% url 'home' %}">vBook @victorceronl</a></li>
         </ul>
     </nav>
 
+    
     <div class="content">
+        <div id="seccionLibrosBest">
+             <h2>BEST SELLERS</h2>
+            <p>Exitos incomparables</p>
+            <div class="purchase-buttons"><a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a></div>
+        </div>
+
+        <div id="seccionLibrosNeg">
+            <h2>NEGOCIOS</h2>
+            <p>Productividad, impacto y enfoque.</p>
+            <div class="purchase-buttons"><a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a></div>
+        </div>
+
+
+
+            <a href="{% url 'category' 'Negocios' %}">Negocios</a>
+            <a href="{% url 'category' 'BestSellers' %}">BestSellers</a>
         {% block content %}{% endblock %}
     </div>
 
