@@ -12,3 +12,6 @@ Mantener un flujo de trabajo constante es esencial para conseguir desarrollar mi
 06/10/25, 7:41 p.m.
 Optimizaré la interfaz principal, usando el estilo creado en mi proyecto frontend principal.
 Usaré el mismo Header, Footer y estrcutura de fuentes.
+
+08/10/25, 7:58 p.m.
+Hoy finalmente logré implementar las funciones principales que habia desarrollado anteriormente. Me comprometo a trabajar de forma disciplinada para avanzar en dirección de mis objetivos.
