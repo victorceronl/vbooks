@@ -10,28 +10,36 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="{% url 'home' %}">vBook @victorceronl</a></li>
+            <li><a href="{% url 'home' %}">vBooks @victorceronl</a></li>
         </ul>
     </nav>
 
     
     <div class="content">
         <div id="seccionLibrosBest">
-             <h2>BEST SELLERS</h2>
+            <h2><a href="{% url 'category' 'BestSellers' %}">BEST SELLERS</a></h2>
             <p>Exitos incomparables</p>
             <div class="purchase-buttons"><a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a></div>
+                <div class="carousel">
+                <a href="libro_0009.html"><img src="{% static 'ebookStore/img/libro_0009.jpg' %}" alt="libro_0009" class="carousel-item"></a>
+                <a href="libro_0010.html"><img src="{% static 'ebookStore/img/libro_0010.jpg' %}" alt="libro_0010" class="carousel-item"></a>
+                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
+                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
+                </div>    
         </div>
 
         <div id="seccionLibrosNeg">
-            <h2>NEGOCIOS</h2>
+            <h2><a href="{% url 'category' 'Negocios' %}">NEGOCIOS</a> </h2>
             <p>Productividad, impacto y enfoque.</p>
             <div class="purchase-buttons"><a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a></div>
+                <div class="carousel">
+                <a href="libro_0009.html"><img src="{% static 'ebookStore/img/libro_0009.jpg' %}" alt="libro_0009" class="carousel-item"></a>
+                <a href="libro_0010.html"><img src="{% static 'ebookStore/img/libro_0010.jpg' %}" alt="libro_0010" class="carousel-item"></a>
+                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
+                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
+                </div>    
         </div>
 
-
-
-            <a href="{% url 'category' 'Negocios' %}">Negocios</a>
-            <a href="{% url 'category' 'BestSellers' %}">BestSellers</a>
         {% block content %}{% endblock %}
     </div>
 
