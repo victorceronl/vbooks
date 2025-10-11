@@ -1,4 +1,4 @@
-{%load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,32 +14,56 @@
         </ul>
     </nav>
 
-    
     <div class="content">
+
+        {# 🔹 Nuevo bloque: esto envuelve el contenido principal de la página de inicio #}
+        {% block main_content %}
+
+        <!-- Sección BEST SELLERS -->
         <div id="seccionLibrosBest">
             <h2><a href="{% url 'category' 'BestSellers' %}">BEST SELLERS</a></h2>
-            <p>Exitos incomparables</p>
-            <div class="purchase-buttons"><a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a></div>
-                <div class="carousel">
-                <a href="libro_0009.html"><img src="{% static 'ebookStore/img/libro_0009.jpg' %}" alt="libro_0009" class="carousel-item"></a>
-                <a href="libro_0010.html"><img src="{% static 'ebookStore/img/libro_0010.jpg' %}" alt="libro_0010" class="carousel-item"></a>
-                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
-                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
-                </div>    
+            <p>Éxitos incomparables</p>
+            <div class="purchase-buttons">
+                <a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a>
+            </div>
+
+            <div class="carousel">
+                {% for ebook in ebooks %}
+                    {% if ebook.category == "BestSellers" %}
+                        <a href="{% url 'ebook_detail' ebook.id %}">
+                            {% if ebook.cover %}
+                                <img src="{{ ebook.cover.url }}" alt="{{ ebook.title }}" class="carousel-item">
+                            {% endif %}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
 
+        <!-- Sección NEGOCIOS -->
         <div id="seccionLibrosNeg">
-            <h2><a href="{% url 'category' 'Negocios' %}">NEGOCIOS</a> </h2>
+            <h2><a href="{% url 'category' 'Negocios' %}">NEGOCIOS</a></h2>
             <p>Productividad, impacto y enfoque.</p>
-            <div class="purchase-buttons"><a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a></div>
-                <div class="carousel">
-                <a href="libro_0009.html"><img src="{% static 'ebookStore/img/libro_0009.jpg' %}" alt="libro_0009" class="carousel-item"></a>
-                <a href="libro_0010.html"><img src="{% static 'ebookStore/img/libro_0010.jpg' %}" alt="libro_0010" class="carousel-item"></a>
-                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
-                <a href="libro_0011.html"><img src="{% static 'ebookStore/img/libro_0011.jpg' %}" alt="libro_0011" class="carousel-item"></a>
-                </div>    
+            <div class="purchase-buttons">
+                <a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a>
+            </div>
+
+            <div class="carousel">
+                {% for ebook in ebooks %}
+                    {% if ebook.category == "Negocios" %}
+                        <a href="{% url 'ebook_detail' ebook.id %}">
+                            {% if ebook.cover %}
+                                <img src="{{ ebook.cover.url }}" alt="{{ ebook.title }}" class="carousel-item">
+                            {% endif %}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
 
+        {% endblock %}
+
+        {# 🔹 Este bloque se usa para páginas internas como "categoría" o "detalle" #}
         {% block content %}{% endblock %}
     </div>
 

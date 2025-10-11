@@ -2,8 +2,13 @@
 
 {% block title %}{{ category }}{% endblock %}
 
+{% block main_content %}
+<!-- vacío intencionalmente para no mostrar los carruseles -->
+{% endblock %}
+
 {% block content %}
 <h1>{{ category }}</h1>
+
 <div class="ebook-list">
   {% for ebook in ebooks %}
     <div class="ebook-item">

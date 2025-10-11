@@ -94,11 +94,11 @@ text-decoration: none;
     gap: 20px;
 }
 .ebook-item {
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 .cover, .cover-detail {
-    width: 300px;
+    width: 200px;
     height: auto;
 }
 
@@ -110,8 +110,8 @@ text-decoration: none;
 }
 
 .carousel-item {
-    width: 160px;
+    width: 250px;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 2px;
 }

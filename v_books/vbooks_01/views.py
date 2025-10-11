@@ -7,6 +7,11 @@ def home(request):
     featured_ebooks = Ebook.objects.all()[:6]  # 6 destacados
     return render(request, "vbooks_01/home.html", {"ebooks": featured_ebooks})
 
+#Selección de libros por categoría
+def home(request):
+    ebooks = Ebook.objects.all()
+    return render(request, 'vbooks_01/home.html', {'ebooks': ebooks})
+
 # Página por categoría
 def category(request, category_name):
     ebooks = Ebook.objects.filter(category=category_name)
