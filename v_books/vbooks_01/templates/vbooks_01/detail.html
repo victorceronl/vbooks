@@ -7,17 +7,30 @@
 {% endblock %}
 
 {% block content %}
-<h2>{{ ebook.title }}</h2>
-{% if ebook.cover %}
-  <img src="{{ ebook.cover.url }}" alt="{{ ebook.title }}" class="cover-detail">
-{% endif %}
-<p>{{ ebook.subtitle }}</p>
-<p><strong>Descripción:</strong> {{ ebook.description }}</p>
-<p><strong>Páginas:</strong> {{ ebook.pages }}</p>
+
+
+ <div  class="ventaEbook">
+  <h2>{{ ebook.title }}</h2>
+  {% if ebook.cover %}
+    <img src="{{ ebook.cover.url }}" alt="{{ ebook.title }}" class="imagenPortadaVenta">
+  {% endif %}
+
+  <p>{{ ebook.subtitle }}</p>
+  <div class="purchase-buttons">
+    <a href="{% url 'download_file' ebook.id %}">
+    <button>📥 Descargar</button>
+    </a>
+    <a href="{% url 'download_file' ebook.id %}" class="pagarLibro">${{ ebook.price }}</a>
+  </div>
+</div>
+
+ <div class="descripcionVentaLibro">
+  <p class="descripcionEbook"><strong>Descripción:</strong> {{ ebook.description }}</p>
+</div>
+
+<!-- <p><strong>Páginas:</strong> {{ ebook.pages }}</p> -->
 <p><strong>Publicado:</strong> {{ ebook.publication_date|date:"d/m/Y" }}</p>
 <p><strong>Descargas:</strong> {{ ebook.download_count }}</p>
 
-<a href="{% url 'download_file' ebook.id %}">
-  <button>📥 Descargar</button>
-</a>
+
 {% endblock %}
