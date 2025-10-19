@@ -18,11 +18,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import RedirectView  # Import para redirección
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('vbooks_01/', include('vbooks_01.urls')),
+    path('', RedirectView.as_view(url='/vbooks_01/', permanent=True)),  # Redirige la raíz
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
