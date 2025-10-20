@@ -11,7 +11,7 @@ import os
 import sys
 
 # Añade la ruta de tu proyecto al path
-path = '/home/victorceronl/v_books' 
+path = '/home/victorceronl/v_books/
 if path not in sys.path:
     sys.path.append(path)
 
