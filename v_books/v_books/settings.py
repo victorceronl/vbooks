@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-ws=c6sjqf0ubvk3x4$8l$t48_d97_!)$0xfd-(u%s005ojr3ac
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = false
 
-ALLOWED_HOSTS = ['victorceronl.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['victorceronl.pythonanywhere.com']
+
 
 
 
@@ -139,7 +140,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 import os
+from pathlib import Path
+
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # carpeta de salida
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # si tienes una carpeta /static en tu proyecto
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
