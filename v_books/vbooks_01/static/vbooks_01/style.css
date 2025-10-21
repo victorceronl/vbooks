@@ -61,6 +61,10 @@ color: white;
 text-decoration: none;
 }
 
+#seccionLibrosNeg p{
+    font-size: 1.3rem;
+}
+
 #seccionLibrosBest{
     background: white;
     border-radius: 10px;
@@ -78,6 +82,9 @@ text-decoration: none;
     text-decoration: none;
 }
 
+#seccionLibrosBest p{
+    font-size: 1.3rem;
+}
 
 /* BOTONES*/
 .purchase-buttons a {
@@ -112,7 +119,7 @@ text-decoration: none;
 
 /* DESTACADOS */
 .ebook-list {
-    text-decoration: none;
+    text-decoration: none !important;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -127,7 +134,7 @@ text-decoration: none;
     margin: 10px;
 }
 .cover, .cover-detail {
-    width: 200px;
+    width: 1800px;
     height: auto;
     border-radius: 5px;
 }
@@ -140,7 +147,7 @@ text-decoration: none;
 }
 
 .carousel-item {
-    width: 250px;
+    width: 220px;
     height: auto;
     object-fit: cover;
     border-radius: 2px;
@@ -188,3 +195,43 @@ text-decoration: none;
     line-height: 1.5;
     text-align: justify;
  }
+
+
+
+
+
+
+
+ /* Centrado general y corrección en móviles */
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Evita desplazamiento lateral */
+}
+
+/* Centrar elementos principales */
+.content, .ventaEbook, .ebook-list, .carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+  .ebook-item, .carousel-item {
+    width: 90%; /* Más adaptable */
+  }
+
+  .imagenPortadaVenta {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .ventaEbook {
+    padding: 1rem;
+  }
+
+  #seccionLibrosNeg, #seccionLibrosBest {
+    padding: 0.5rem;
+  }
+}
