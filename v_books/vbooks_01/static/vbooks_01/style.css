@@ -8,7 +8,7 @@ body{
 
 
 .navbar {
-    background-color: rgb(255, 0, 0);
+    background-color: black;
     color: white;
     padding: 0.1rem;
     text-align: center;
@@ -169,11 +169,6 @@ text-decoration: none;
     text-align: center;
 }
 
-.ventaEbook p{
-    font-size: 2rem;
-    color: rgb(255, 18, 18);
-    margin-top: 0.5rem;
-}
 
 .informacionEbookVenta{
     padding: 0.2rem;
@@ -190,7 +185,7 @@ text-decoration: none;
     background-color: black;
     padding: 3rem;
     margin-top: 0.1rem;
-    text-align: center;
+    text-align: justify;
     border-radius: 10px;
 }
  .descripcionEbook{
