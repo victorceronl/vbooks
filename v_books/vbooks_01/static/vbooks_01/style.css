@@ -125,7 +125,7 @@ text-decoration: none;
     gap: 20px;
 }
 .ebook-item {
-    width: 250px;
+    width: 210px;
     text-align: center;
 }
 .ebook-item h3 {
@@ -147,7 +147,7 @@ text-decoration: none;
 }
 
 .carousel-item {
-    width: 220px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 2px;
@@ -157,7 +157,7 @@ text-decoration: none;
 
 /* PAGINA INDIVIDUAL*/
 .imagenPortadaVenta{
-    width: 280px;
+    width: 220px;
     height: auto;
     border-radius: 5px;
     border: 0.5px solid rgb(216, 208, 123) ;
