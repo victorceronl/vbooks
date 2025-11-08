@@ -10,17 +10,12 @@ body{
 .navbar {
     background-color: black;
     color: white;
-    padding: 0.8rem 0;
+    padding: 0.1rem;
     text-align: center;
 }
 
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center;     /* Centra verticalmente */
     gap: 35px;
     font-size: 2rem;
 }
@@ -50,7 +45,7 @@ body{
 /* SECCION PRINCIPAL NEGOCIOS */
 #seccionLibrosNeg{
     background-color: black;
-    border-radius: 0px;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
     color: white;
@@ -72,7 +67,7 @@ text-decoration: none;
 
 #seccionLibrosBest{
     background: white;
-    border-radius: 0px;
+    border-radius: 10px;
     padding: 1rem;
     text-align: center;
     text-transform: bold;
@@ -94,10 +89,10 @@ text-decoration: none;
 /* BOTONES*/
 .purchase-buttons a {
     display: inline-block;
-      margin: 0.7rem;
-      padding: 0.5rem 1.5rem;
-      font-size:1.6rem;
-      border-radius: 12px;
+      margin: 0.5rem;
+      padding: 0.3rem 1rem;
+      font-size:1rem;
+      border-radius: 10px;
       text-decoration: none;
 }
 
@@ -130,7 +125,7 @@ text-decoration: none;
     gap: 20px;
 }
 .ebook-item {
-    width: auto;
+    width: 210px;
     text-align: center;
 }
 .ebook-item h3 {
@@ -139,11 +134,9 @@ text-decoration: none;
     margin: 10px;
 }
 .cover, .cover-detail {
-    width: 100%;
-    max-width: 200px;
+    width: 1800px;
     height: auto;
-    border-radius: 7px;
-    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* CARROUSEL*/
@@ -164,12 +157,10 @@ text-decoration: none;
 
 /* PAGINA INDIVIDUAL*/
 .imagenPortadaVenta{
-    width: 100%;
-    max-width: 350px; /* más grande que las demás */
+    width: 220px;
     height: auto;
     border-radius: 5px;
-    border: 0.5px solid rgb(216, 208, 123);
-    object-fit: cover;
+    border: 0.5px solid rgb(216, 208, 123) ;
 }
 
 .ventaEbook{
@@ -195,7 +186,7 @@ text-decoration: none;
     padding: 3rem;
     margin-top: 0.1rem;
     text-align: justify;
-    border-radius: 0px;
+    border-radius: 10px;
 }
  .descripcionEbook{
     font-size: 2rem;
@@ -227,14 +218,14 @@ body, html {
 
 /* Ajustes responsive */
 @media (max-width: 768px) {
-  .cover, .cover-detail {
-    max-width: 150px; /* se reduce proporcionalmente */
+  .ebook-item, .carousel-item {
+    width: 90%; /* Más adaptable */
   }
 
   .imagenPortadaVenta {
-    max-width: 280px; /* mantiene protagonismo pero no desborda */
+    width: 90%;
+    max-width: 280px;
   }
-}
 
   .ventaEbook {
     padding: 1rem;
