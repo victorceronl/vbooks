@@ -134,7 +134,7 @@ text-decoration: none;
     margin: 10px;
 }
 .cover, .cover-detail {
-    width: 1800px;
+    width: 180px;
     height: auto;
     border-radius: 5px;
 }
@@ -147,7 +147,7 @@ text-decoration: none;
 }
 
 .carousel-item {
-    width: 200px;
+    width: 180px;
     height: auto;
     object-fit: cover;
     border-radius: 2px;
@@ -157,7 +157,7 @@ text-decoration: none;
 
 /* PAGINA INDIVIDUAL*/
 .imagenPortadaVenta{
-    width: 220px;
+    width: 300px;
     height: auto;
     border-radius: 5px;
     border: 0.5px solid rgb(216, 208, 123) ;
