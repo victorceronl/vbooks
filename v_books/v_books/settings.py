@@ -131,6 +131,7 @@ STATIC_URL = '/static/'
 # Opcional: si tienes directorios de static dentro de tus apps
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'vbooks_01', 'static'),
 ]
 
 
