@@ -53,7 +53,7 @@ body{
 }
 
 #seccionLibrosNeg h2{
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 
 #seccionLibrosNeg a{
@@ -61,9 +61,9 @@ color: white;
 text-decoration: none;
 }
 
-#seccionLibrosNeg p{
-    font-size: 3rem;
-}
+
+
+
 
 #seccionLibrosBest{
     background: white;
@@ -74,7 +74,7 @@ text-decoration: none;
 }
 
 #seccionLibrosBest h2{
-    font-size: 5rem;
+    font-size: 2.5rem;
 }
 
 #seccionLibrosBest a{
@@ -82,9 +82,9 @@ text-decoration: none;
     text-decoration: none;
 }
 
-#seccionLibrosBest p{
-    font-size: 3rem;
-}
+
+
+
 
 /* BOTONES*/
 .purchase-buttons a {
@@ -119,13 +119,13 @@ text-decoration: none;
 
 /* DESTACADOS */
 .ebook-list {
-    text-decoration: none !important;
+    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 .ebook-item {
-    width: 210px;
+    width: 250px;
     text-align: center;
 }
 .ebook-item h3 {
@@ -134,7 +134,7 @@ text-decoration: none;
     margin: 10px;
 }
 .cover, .cover-detail {
-    width: 180px;
+    width: 200px;
     height: auto;
     border-radius: 5px;
 }
@@ -147,7 +147,7 @@ text-decoration: none;
 }
 
 .carousel-item {
-    width: 180px;
+    width: 250px;
     height: auto;
     object-fit: cover;
     border-radius: 2px;
@@ -157,7 +157,7 @@ text-decoration: none;
 
 /* PAGINA INDIVIDUAL*/
 .imagenPortadaVenta{
-    width: 300px;
+    width: 280px;
     height: auto;
     border-radius: 5px;
     border: 0.5px solid rgb(216, 208, 123) ;
@@ -177,7 +177,7 @@ text-decoration: none;
     border-radius: 10px;
 }
 .publicacionEbook{
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     color: rgb(57, 55, 55);
     margin-top: 0.5rem;
 }
@@ -185,53 +185,13 @@ text-decoration: none;
     background-color: black;
     padding: 3rem;
     margin-top: 0.1rem;
-    text-align: justify;
+    text-align: center;
     border-radius: 10px;
 }
  .descripcionEbook{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
     margin-top: 0.5rem;
     line-height: 1.5;
     text-align: justify;
  }
-
-
-
-
-
-
-
- /* Centrado general y corrección en móviles */
-body, html {
-  width: 100%;
-  overflow-x: hidden; /* Evita desplazamiento lateral */
-}
-
-/* Centrar elementos principales */
-.content, .ventaEbook, .ebook-list, .carousel {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-/* Ajustes responsive */
-@media (max-width: 768px) {
-  .ebook-item, .carousel-item {
-    width: 90%; /* Más adaptable */
-  }
-
-  .imagenPortadaVenta {
-    width: 90%;
-    max-width: 280px;
-  }
-
-  .ventaEbook {
-    padding: 1rem;
-  }
-
-  #seccionLibrosNeg, #seccionLibrosBest {
-    padding: 0.5rem;
-  }
-}
