@@ -86,7 +86,21 @@ text-decoration: none;
   color: white !important;
 }
 
+.pagarLibro{
+    background-color: white;
+    border-color: #007aff;
+    border-width: 0.1rem;
+    border-style: solid;
+    color: #007aff;
+}
 
+.pagarLibroBlack{
+    background-color: black;
+    border-color: #007aff;
+    border-width: 0.1rem;
+    border-style: solid;
+    color: #007aff;
+}
 /* DESTACADOS */
 .ebook-list {
     display: flex;
