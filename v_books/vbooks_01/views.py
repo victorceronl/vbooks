@@ -3,9 +3,9 @@ from .models import Ebook
 from django.http import FileResponse
 
 # Página principal
-def home(request):
-    featured_ebooks = Ebook.objects.all()[:6]  # 6 destacados
-    return render(request, "vbooks_01/home.html", {"ebooks": featured_ebooks})
+#def home(request):
+ #   featured_ebooks = Ebook.objects.all()[:6]  # 6 destacados
+  #  return render(request, "vbooks_01/home.html", {"ebooks": featured_ebooks})
 
 #Selección de libros por categoría
 def home(request):
@@ -32,3 +32,7 @@ def download_file(request, ebook_id):
         as_attachment=True,
         filename=ebook.title + "." + ebook.file.name.split(".")[-1]
     )
+
+# Página de donativos
+def donativo(request):
+    return render(request, "vbooks_01/donativo.html")
