@@ -16,10 +16,9 @@
 
     <div class="content">
 
-        {# 🔹 Contenido principal (solo visible en la página de inicio) #}
         {% block main_content %}
-
-        <!-- Sección BEST SELLERS -->
+        <!-- 🔹 Sección BEST SELLERS (solo si existe la variable 'ebooks') -->
+        {% if ebooks %}
         <div id="seccionLibrosBest">
             <h2><a href="{% url 'category' 'BestSellers' %}">BEST SELLERS</a></h2>
             <p>Éxitos incomparables</p>
@@ -27,7 +26,6 @@
                 <a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a>
             </div>
 
-            {% if ebooks %}
             <div class="carousel">
                 {% for ebook in ebooks %}
                     {% if ebook.category == "BestSellers" %}
@@ -39,10 +37,9 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            {% endif %}
         </div>
 
-        <!-- Sección NEGOCIOS -->
+        <!-- 🔹 Sección NEGOCIOS -->
         <div id="seccionLibrosNeg">
             <h2><a href="{% url 'category' 'Negocios' %}">NEGOCIOS</a></h2>
             <p>Productividad, impacto y enfoque.</p>
@@ -50,7 +47,6 @@
                 <a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a>
             </div>
 
-            {% if ebooks %}
             <div class="carousel">
                 {% for ebook in ebooks %}
                     {% if ebook.category == "Negocios" %}
@@ -62,19 +58,17 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            {% endif %}
         </div>
+        {% endif %}
 
-        <!-- Sección COMO AGREGAR EBOOKS -->
+        <!-- 🔹 Sección Cómo agregar ebooks -->
         <div id="seccionLibrosBest">
             <h2>eBooks en Apple Books</h2>
             <p>Agrega tus ebooks de forma sencilla</p>
             <img src="{% static 'vbooks_01/imgs/como-descargar.jpg' %}" alt="Agregar eBooks" class="agregarEbooksImg">
         </div>
-
         {% endblock %}
 
-        {# 🔹 Contenido para páginas internas como "categoría", "detalle" o "donativo" #}
         {% block content %}{% endblock %}
     </div>
 
