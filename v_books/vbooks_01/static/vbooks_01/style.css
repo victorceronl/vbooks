@@ -98,7 +98,7 @@ text-decoration: none;
     text-align: center;
 }
 .cover, .cover-detail {
-    width: 200px;
+    width: 170px;
     height: auto;
 }
 
@@ -118,7 +118,8 @@ text-decoration: none;
 
 
 .agregarEbooksImg {
-    width: 300px;      /* ancho fijo */
+    width: 500px;      /* ancho fijo */
+    border: 0.1px solid rgb(216, 208, 123) ;
     height: auto;      /* mantiene la proporción original */
     border-radius: 10px; /* opcional, bordes redondeados */
     display: block;    /* para poder centrarla fácilmente */
@@ -142,8 +143,8 @@ text-decoration: none;
 }
 
 .ventaEbook p{
-    font-size: 2rem;
-    color: rgb(255, 18, 18);
+    font-size: 1.7rem;
+    color: black;
     margin-top: 0.5rem;
 }
 
@@ -163,12 +164,11 @@ text-decoration: none;
     padding: 3rem;
     margin-top: 0.1rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0px;
 }
  .descripcionEbook{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
     margin-top: 0.5rem;
     line-height: 1.5;
-    text-align: justify;
  }
