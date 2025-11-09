@@ -17,7 +17,7 @@ body{
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     font-size: 2rem;
     text-align: center;
 }
