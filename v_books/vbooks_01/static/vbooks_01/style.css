@@ -117,8 +117,10 @@ text-decoration: none;
 }
 
 
-.agregarEbooksImg{
-    width: 100px;
-    height: auto;
-    margin-top: 1rem;
+.agregarEbooksImg {
+    width: 300px;      /* ancho fijo */
+    height: auto;      /* mantiene la proporción original */
+    border-radius: 10px; /* opcional, bordes redondeados */
+    display: block;    /* para poder centrarla fácilmente */
+    margin: 1rem auto; /* centrada horizontalmente con margen arriba/abajo */
 }
