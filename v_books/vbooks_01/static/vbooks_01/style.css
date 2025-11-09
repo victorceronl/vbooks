@@ -101,7 +101,7 @@ text-decoration: none;
     border-style: solid;
     color: #007aff;
 }
-/* DESTACADOS */
+/* DESTACADOS */ 
 .ebook-list {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +112,7 @@ text-decoration: none;
     text-align: center;
     text-decoration: none;
 }
+/* PORTADAS*/
 .cover, .cover-detail {
     width: 160px;
     border-radius: 8px;
