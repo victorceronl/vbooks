@@ -108,11 +108,13 @@ text-decoration: none;
     gap: 20px;
 }
 .ebook-item {
-    width: 200px;
+    width: 170px;
     text-align: center;
+    text-decoration: none;
 }
 .cover, .cover-detail {
-    width: 170px;
+    width: 160px;
+    border-radius: 8px;
     height: auto;
 }
 
