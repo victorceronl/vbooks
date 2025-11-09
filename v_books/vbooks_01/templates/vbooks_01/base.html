@@ -16,7 +16,7 @@
 
     <div class="content">
 
-        {# 🔹 Nuevo bloque: esto envuelve el contenido principal de la página de inicio #}
+        {# 🔹 Contenido principal (solo visible en la página de inicio) #}
         {% block main_content %}
 
         <!-- Sección BEST SELLERS -->
@@ -27,6 +27,7 @@
                 <a href="{% url 'category' 'BestSellers' %}" class="masInfo">Más información</a>
             </div>
 
+            {% if ebooks %}
             <div class="carousel">
                 {% for ebook in ebooks %}
                     {% if ebook.category == "BestSellers" %}
@@ -38,6 +39,7 @@
                     {% endif %}
                 {% endfor %}
             </div>
+            {% endif %}
         </div>
 
         <!-- Sección NEGOCIOS -->
@@ -48,6 +50,7 @@
                 <a href="{% url 'category' 'Negocios' %}" class="masInfo">Más información</a>
             </div>
 
+            {% if ebooks %}
             <div class="carousel">
                 {% for ebook in ebooks %}
                     {% if ebook.category == "Negocios" %}
@@ -59,17 +62,19 @@
                     {% endif %}
                 {% endfor %}
             </div>
+            {% endif %}
         </div>
 
-        <!-- Sección COMO AGREGAR EBOOKS --> 
-         <div id="seccionLibrosBest"> 
+        <!-- Sección COMO AGREGAR EBOOKS -->
+        <div id="seccionLibrosBest">
             <h2>eBooks en Apple Books</h2>
             <p>Agrega tus ebooks de forma sencilla</p>
             <img src="{% static 'vbooks_01/imgs/como-descargar.jpg' %}" alt="Agregar eBooks" class="agregarEbooksImg">
-         </div>
+        </div>
+
         {% endblock %}
 
-        {# 🔹 Este bloque se usa para páginas internas como "categoría" o "detalle" #}
+        {# 🔹 Contenido para páginas internas como "categoría", "detalle" o "donativo" #}
         {% block content %}{% endblock %}
     </div>
 
