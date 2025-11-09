@@ -133,9 +133,9 @@ text-decoration: none;
 
 .agregarEbooksImg {
     width: 500px;      /* ancho fijo */
-    border: 0.1px solid rgb(216, 208, 123) ;
+    border: 0.1px solid black; ;
     height: auto;      /* mantiene la proporción original */
-    border-radius: 10px; /* opcional, bordes redondeados */
+    border-radius: 15px; /* opcional, bordes redondeados */
     display: block;    /* para poder centrarla fácilmente */
     margin: 1rem auto; /* centrada horizontalmente con margen arriba/abajo */
 }
@@ -154,6 +154,11 @@ text-decoration: none;
     background: white;
     padding: 4rem;
     text-align: center;
+}
+
+.ventaEbook h2{
+    font-size: 2.3rem;
+    color: black;
 }
 
 .ventaEbook p{
