@@ -16,8 +16,10 @@ body{
 
 .navbar ul {
     list-style: none;
-    gap: 35px;
+    display: flex;
+    gap: 20px;
     font-size: 2rem;
+    text-align: center;
 }
 .navbar ul li a {
     color: white;
@@ -135,8 +137,8 @@ text-decoration: none;
 
 
 .agregarEbooksImg {
-    width: 500px;      /* ancho fijo */
-    border: 0.1px solid black; ;
+    width: 350px;      /* ancho fijo */
+    border: 1px solid black; ;
     height: auto;      /* mantiene la proporción original */
     border-radius: 15px; /* opcional, bordes redondeados */
     display: block;    /* para poder centrarla fácilmente */
