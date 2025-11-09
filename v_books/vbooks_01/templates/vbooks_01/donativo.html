@@ -1,0 +1,24 @@
+{% extends 'vbooks_01/base.html' %}
+
+{% block title %}{{ ebook.title }}{% endblock %}
+
+{% block main_content %}
+<!-- vacío intencionalmente para no mostrar los carruseles -->
+{% endblock %}
+
+{% block content %}
+ <div  class="donativo">
+  <h2>¿En qué creo y Porqué denerías apoyarme</h2>
+<p>Creo que el conocimiento y la información deben ser libres y accesibles para todo el mundo. En muchos países en desarrollo, comprar tus libros favoritos es difícil; están literalmente fuera del alcance de mucha gente. Además, Amazon no realiza envíos a muchos países y no todos tienen los recursos económicos para comprar por internet.</p>
+<p>Creo firmemente que descargar el libro electrónico que desees debería ser muy sencillo. No debería ser necesario registrarse, ni suscribirse, ni ver anuncios o ventanas emergentes molestas. Deberías obtener lo que quieres, así de fácil. Por ello cree este sitio. Si compartes mi visión te invito a realizar un donativo por la cantidad que desees.</p>
+<p>Cuenta CLABE: 728969000099402388</p>
+<p>Nombre: Victor Ceron Loeza</p> 
+ <div class="instagram-link">
+    <p>Sí te gusta mi trabajo y quieres apoyarme de alguna otra manera, puedes hacerlo a través de redes sociales</p> 
+    <a href="{% url 'download_file' ebook.id %}" class="igBoton">Instagram</a>
+<!--    <a href="{% url 'download_file' ebook.id %}" class="masInfo">${{ ebook.price }}</a> -->
+    <a href="{% url 'download_file' ebook.id %}" class="YouTubeBoton">YouTube</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -18,7 +18,8 @@
   <p>{{ ebook.subtitle }}</p>
   <div class="purchase-buttons">
     <a href="{% url 'download_file' ebook.id %}" class="pagarLibro">Descargar</a>
-    <a href="{% url 'download_file' ebook.id %}" class="masInfo">${{ ebook.price }}</a>
+<!--    <a href="{% url 'download_file' ebook.id %}" class="masInfo">${{ ebook.price }}</a> -->
+    <a href="{% url 'donativo' %}" class="masInfo">Donar</a>
   </div>
 </div>
 

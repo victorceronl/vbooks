@@ -103,6 +103,19 @@ text-decoration: none;
     border-style: solid;
     color: #007aff;
 }
+
+.YouTubeBoton{
+  background-color: #c4302b;
+  color: white !important;
+}
+
+.igBoton{
+    background-color: white;
+    border-color: #e1306c;
+    border-width: 0.1rem;
+    border-style: solid;
+    color: #c13584;
+}
 /* DESTACADOS */ 
 .ebook-list {
     display: flex;
@@ -162,7 +175,8 @@ text-decoration: none;
 }
 
 .ventaEbook h2{
-    font-size: 2.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     color: black;
 }
 
@@ -196,3 +210,22 @@ text-decoration: none;
     margin-top: 0.5rem;
     line-height: 1.5;
  }
+
+ /* PAGINA DONATIVO*/
+ .donativo{
+    background: white;
+    padding: 4rem;
+    text-align: center;
+}
+
+.donativo h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.donativo p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 0.5rem;
+}
