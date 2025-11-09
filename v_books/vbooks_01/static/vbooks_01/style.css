@@ -115,3 +115,10 @@ text-decoration: none;
     object-fit: cover;
     border-radius: 8px;
 }
+
+
+.agregarEbooksImg{
+    width: 100px;
+    height: auto;
+    margin-top: 1rem;
+}
