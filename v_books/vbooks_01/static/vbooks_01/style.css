@@ -35,7 +35,7 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     letter-spacing: 0.5px;
     white-space: nowrap; /* evita que se corte el texto */
     transition: color 0.3s ease;
@@ -213,19 +213,26 @@ text-decoration: none;
     margin-top: 0.5rem;
 }
 .descripcionVentaLibro{
-    background-color: black;
-    padding: 3rem;
-    margin-top: 0.1rem;
-    text-align: center;
-    border-radius: 0px;
+  background-color: black;
+  padding: 2.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-align: left; /* mejora la lectura en móviles */
+  border-radius: 0;
 }
  .descripcionEbook{
-    font-size: 1.5rem;
-    color:white;
-    margin-top: 0.5rem;
-    line-height: 1.5;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
  }
-
+.descripcionEbook h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffcc00; /* toque visual tipo Apple */
+}
  /* PAGINA DONATIVO*/
  .donativo{
     background: white;

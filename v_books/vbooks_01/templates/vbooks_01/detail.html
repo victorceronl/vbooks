@@ -23,8 +23,13 @@
   </div>
 </div>
 
- <div class="descripcionVentaLibro">
-  <p class="descripcionEbook"><strong>Descripción:</strong> {{ ebook.description }}</p>
+<div class="descripcionVentaLibro">
+  <div class="descripcionEbook">
+    <h3>Descripción</h3>
+    <p>
+      {{ ebook.description|linebreaksbr }}
+    </p>
+  </div>
 </div>
 
 <!-- <p><strong>Páginas:</strong> {{ ebook.pages }}</p> -->
