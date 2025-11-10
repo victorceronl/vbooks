@@ -188,7 +188,10 @@ text-decoration: none;
     padding: 4rem;
     text-align: center;
 }
-
+  .ventaEbook {
+    padding: 2rem 1rem;
+  }
+  
 .ventaEbook h2{
     font-size: 1.1rem;
     font-weight: bold;
@@ -196,9 +199,10 @@ text-decoration: none;
 }
 
 .ventaEbook p{
-    font-size: 1.7rem;
     color: black;
-    margin-top: 0.5rem;
+    margin-top: 0.5rem;    
+    font-size: 1.4rem; /* subtítulo más cómodo en móviles */
+    line-height: 1.5;
 }
 
 .informacionEbookVenta{
