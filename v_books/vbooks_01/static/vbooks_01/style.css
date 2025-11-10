@@ -213,18 +213,23 @@ text-decoration: none;
  /* PAGINA DONATIVO*/
  .donativo{
     background: white;
-    padding: 4rem;
-    text-align: center;
+    padding: 2rem 1.2rem;
+    text-align: left; /* Mejor para lectura larga */
+    max-width: 700px;
+    margin: 0 auto; /* Centra el bloque en pantallas grandes */
+    line-height: 1.7;
 }
 
 .donativo h2{
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: black;
+    text-align: center; /* título centrado, texto no */
+    margin-bottom: 1.5rem;
 }
 
 .donativo p{
-    font-size: 1.5rem;
-    color: black;
-    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    margin: 1rem 0;
 }
