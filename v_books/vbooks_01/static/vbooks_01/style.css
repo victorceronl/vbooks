@@ -10,21 +10,37 @@ body{
 .navbar {
     background-color: black;
     color: white;
-    padding: 0.1rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;   /* centra horizontalmente */
+    align-items: center;       /* centra verticalmente */
     text-align: center;
+    position: sticky;          /* se mantiene visible al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra sutil tipo Apple */
 }
 
 .navbar ul {
     list-style: none;
-    gap: 30px;
-    font-size: 2rem;
-    text-align: center;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar ul li {
+    display: inline-block;
+}
+
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap; /* evita que se corte el texto */
+    transition: color 0.3s ease;
 }
+
 .navbar ul li a:hover {
     color: #ffcc00;
 }
