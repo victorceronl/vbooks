@@ -25,3 +25,6 @@ Considero importante identificar los puntos clave para trabajar de forma discipl
 
 03/11/25, 11:23 p.m.
 El día de hoy es importante concentrarme en crear verdadero valor, aprovechar lo que tengo, lo que he creado y buscar la manera de impactar de una mejor manera.
+
+03/12/25, 9:25 p.m.
+A estas alturas, despues de haber invertido tanto tiempo, el mayor logro fue aprender a desarrollar una aplicación usando Django. La app que cree no tuvo el exito que esperaba, pero sin duda alguna es una forma de aprender una forma diferente de hacer las cosas. Hoy decido centrarme y abrir mi creatividad a multiples oportunidades, encontrar la manera correcta para salir adelante y ser fiel a mis principios. Una mejora continua es la clave.
